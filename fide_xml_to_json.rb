@@ -90,6 +90,10 @@ class MyDocument < Nokogiri::XML::SAX::Document
     json_text = JSON.pretty_generate(records)
     # json_text = records.to_json  # for compact JSON, use this line instead of the previous one.
     File.write(json_filespec, json_text)
+
+    # Uncomment the line below to get an interactive shell where `self` is the records array.
+    # You will need to `gem install pry` so that the interactive shell library is available.
+    # require 'pry'; records.pry
     puts 'finished.'
   end
 end
