@@ -19,6 +19,8 @@ Syntax is:
 
 It will show its progress, and when it is finished parsing all the XML records will write the JSON representation of the parsed data to a file whose name is the same as the XML file, but with `.xml` changed to `.json`.
 
+The data is output in "pretty" JSON format (that is, easily readable by humans). If you need a more compact format, you can adjust the script as mentioned in the comments (search for "JSON").
+
 
 ## Advanced Usage
 
@@ -27,5 +29,15 @@ Assuming one can write even simple Ruby code, customizing this script is easy. A
 * _field filtering_ - exclude some fields from the JSON output
 * _record filtering_ - exclude records meeting specified criteria
 * _statistical analysis_ - analysis of the parsed data
+* _data validation_ - to look for data errors and ambiguities
 
 Since the entire data set is read into the `records` array in memory, you can use this script to manipulate or process the data in any way you like, maybe even bypassing the JSON output entirely.
+
+You could also insert the following to get an interactive shell where `self` is the records array. Look in the script for these lines and uncomment the relevant line:
+
+```
+    # Uncomment the line below to get an interactive shell where `self` is the records array.
+    # You will need to `gem install pry` so that the interactive shell library is available.
+    # require 'pry'; records.pry
+```
+
