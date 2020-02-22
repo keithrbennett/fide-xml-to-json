@@ -1,10 +1,10 @@
 #!/usr/bin/env ruby
 
-# fide_ratings_xml_to_json.rb
+# fide_xml_to_json.rb
 # converts an XML ratings file to JSON, where the XML file is a combined chess ratings
 # XML file downloadable at https://ratings.fide.com/download_lists.phtml.
 #
-# This will probaby work for the other ratings file formats as well, but that is not yet tested.
+# This will probably work for the other ratings file formats as well, but that is not yet tested.
 
 require 'json'
 require 'nokogiri'
@@ -17,6 +17,9 @@ class MyDocument < Nokogiri::XML::SAX::Document
   attr_accessor :current_property_name, :record, :records
 
   NUMERIC_FIELDS = %w[
+    k
+    blitz_k
+    rapid_k
   	rating
   	blitz_rating
   	rapid_rating
