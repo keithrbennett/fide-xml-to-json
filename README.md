@@ -3,7 +3,7 @@
 This repo contains two scripts:
  
 * [fide_xml_to_json.rb](fide_xml_to_json.rb) - generates a JSON file from an XML file downloaded from [https://ratings.fide.com/download_lists.phtml](https://ratings.fide.com/download_lists.phtml) or [https://ratings.fide.com/download.phtml](https://ratings.fide.com/download.phtml).
-* [analyze_fide_data.rb](analyze_fide_data.rb) - generates a JSON file containing statistics from a JSON file produced by fide_xml_to_json.rb. This file may not necessarily include information useful to you, but is an example of how the data can be manipulated.
+* [analyze_fide_data.rb](analyze_fide_data.rb) - generates a JSON file containing statistics from a JSON file produced by fide_xml_to_json.rb. This file may not necessarily include information useful to you, but is an example of how the data can be manipulated. Sample output files are in the [samples](./samples) directory.
 
 
 ## Installation Instructions
@@ -21,7 +21,7 @@ The scripts output the JSON in "pretty" format that is more human-readable than 
 
 ### fide_xml_to_json.rb
 
-Syntax is:
+[fide_xml_to_json.rb](fide_xml_to_json.rb) syntax is:
 
 `ruby fide_xml_to_json.rb my_file.xml`
 
@@ -29,7 +29,7 @@ It will show its progress, and when it is finished parsing all the XML records w
 
 ### analyze_fide_data.rb
 
-Syntax is:
+[analyze_fide_data.rb](./analyze_fide_data.rb) syntax is:
 
 `ruby analyze_fide_data.rb my_file.json`
 

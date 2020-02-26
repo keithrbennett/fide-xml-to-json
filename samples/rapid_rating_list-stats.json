@@ -1,0 +1,44 @@
+{
+  "record_count": 189554,
+  "unique_id_count": 189554,
+  "std_rating_count": 189554,
+  "blitz_rating_count": 0,
+  "rapid_rating_count": 0,
+  "rating_counts": {
+    "0": 0,
+    "1": 189554,
+    "2": 0,
+    "3": 0
+  },
+  "field_names": [
+    "birthday",
+    "country",
+    "fideid",
+    "flag",
+    "foa_title",
+    "games",
+    "k",
+    "name",
+    "o_title",
+    "rating",
+    "sex",
+    "title",
+    "w_title"
+  ],
+  "field_value_count": {
+    "birthday": 186678,
+    "country": 189554,
+    "fideid": 189554,
+    "flag": 101060,
+    "foa_title": 1327,
+    "games": 189554,
+    "k": 189554,
+    "name": 189554,
+    "o_title": 3154,
+    "rating": 189554,
+    "sex": 189450,
+    "title": 11258,
+    "w_title": 2156
+  },
+  "total_rating_count": 189554
+}
