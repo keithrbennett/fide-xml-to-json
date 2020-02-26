@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 #
-# analyze_fide_data
+# analyze_fide_data.rb
 
 
 require 'awesome_print'
