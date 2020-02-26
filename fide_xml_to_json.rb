@@ -51,7 +51,7 @@ class MyDocument < Nokogiri::XML::SAX::Document
   end
 
 
-  def start_element(name, attrs = [])
+  def start_element(name, _attrs)
     case name
     when 'playerslist'
       # ignore
